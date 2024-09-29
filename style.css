@@ -1,13 +1,13 @@
 @font-face {
     font-family: "Jost Normal";
-    src: url("fonts/Jost/Jost-Variable-Font-Weight.woff") format("woff-variations");
+    src: url("fonts/Jost/Jost-Variable-Font-Weight.woff2") format("woff2-variations");
     font-weight: 100 900;
     font-stretch: 75% 125%;
     font-style: normal;
 }
 @font-face {
     font-family: "Jost Italic";
-    src: url("fonts/Jost/Jost-Italic-Variable-Font-Weight.woff") format("woff-variations");
+    src: url("fonts/Jost/Jost-Italic-Variable-Font-Weight.woff2") format("woff2-variations");
     font-weight: 100 900;
     font-stretch: 75% 125%;
     font-style: italic;
@@ -15,6 +15,6 @@
 
 p {
     font-family: "Jost Normal";
-    font-weight: bold;
+    font-weight: 750;
     color: blue;
 }
