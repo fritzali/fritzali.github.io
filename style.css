@@ -2,19 +2,19 @@
     font-family: "Jost Normal";
     src: url("fonts/Jost/Jost-Variable-Font-Weight.woff2") format("woff2-variations");
     font-weight: 100 900;
-    font-stretch: 75% 125%;
+    font-stretch: 100% 100%;
     font-style: normal;
 }
 @font-face {
     font-family: "Jost Italic";
     src: url("fonts/Jost/Jost-Italic-Variable-Font-Weight.woff2") format("woff2-variations");
     font-weight: 100 900;
-    font-stretch: 75% 125%;
+    font-stretch: 100% 100%;
     font-style: italic;
 }
 
 p {
-    font-family: "Jost Normal";
-    font-weight: 750;
+    font-family: "Jost Italic";
+    font-weight: 250;
     color: blue;
 }
