@@ -10,7 +10,7 @@
     src: url("fonts/Jost/Jost-Italic-Variable-Font-Weight.woff2") format("woff2-variations");
     font-weight: 100 900;
     font-stretch: 100% 100%;
-    font-style: italic;
+    font-style: normal;
 }
 
 p {
