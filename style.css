@@ -1,20 +1,20 @@
 @font-face {
-    font-family: "Jost Normal";
-    src: url("fonts/Jost/Jost-Normal-Variable-Font-Weight.woff2") format("woff2-variations");
+    font-family: "Inter Normal";
+    src: url("fonts/Inter/Inter-Variable-Normal.woff2") format("woff2-variations");
     font-weight: 100 900;
     font-stretch: 100% 100%;
     font-style: normal;
 }
 @font-face {
-    font-family: "Jost Italic";
-    src: url("fonts/Jost/Jost-Italic-Variable-Font-Weight.woff2") format("woff2-variations");
+    font-family: "Inter Italic";
+    src: url("fonts/Inter/Inter-Variable-Italic.woff2") format("woff2-variations");
     font-weight: 100 900;
     font-stretch: 100% 100%;
     font-style: normal;
 }
 
 p {
-    font-family: "Jost Italic";
+    font-family: "Inter Italic";
     font-weight: 250;
     color: blue;
 }
