@@ -1,20 +1,22 @@
 @font-face {
     font-family: "Inter Normal";
     src: url("fonts/Inter/Inter-Variable-Normal.woff2") format("woff2-variations");
-    font-weight: 100 900;
+    font-optical-sizing: auto;
     font-stretch: 100% 100%;
     font-style: normal;
+    font-weight: 100 900;
 }
 @font-face {
     font-family: "Inter Italic";
     src: url("fonts/Inter/Inter-Variable-Italic.woff2") format("woff2-variations");
-    font-weight: 100 900;
+    font-optical-sizing: auto;
     font-stretch: 100% 100%;
     font-style: normal;
+    font-weight: 100 900;
 }
 
 p {
-    font-family: "Inter Italic";
-    font-weight: 250;
-    color: blue;
+    font-family: "Inter Normal";
+    font-weight: 150;
+    color: green;
 }
