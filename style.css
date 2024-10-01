@@ -28,15 +28,13 @@ body {
     --fg: hsl(0, 0%, 25%);
     background-color: var(--bg);
     color: var(--fg);
-  -webkit-transition: .25s;
-  transition: .25s;
+    transition: .25s;
 }
 body:has(#dark:checked) {
     --mid: hsl(0, 0%, 30%);
     --bg: hsl(0, 0%, 5%);
     --fg: hsl(0, 0%, 75%);
-  -webkit-transition: .25s;
-  transition: .25s;
+    transition: .25s;
 }
 
 
@@ -61,7 +59,6 @@ body:has(#dark:checked) {
   right: 0;
   bottom: 0;
   background-color: var(--mid);
-  -webkit-transition: .25s;
   transition: .25s;
 }
 
@@ -73,13 +70,10 @@ body:has(#dark:checked) {
   left: 2px;
   bottom: 2px;
   background-color: var(--bg);
-  -webkit-transition: .25s;
   transition: .25s;
 }
 
 input:checked + .slider:before {
-  -webkit-transform: translateX(20px);
-  -ms-transform: translateX(20px);
   transform: translateX(20px);
 }
 
