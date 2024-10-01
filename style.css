@@ -15,10 +15,13 @@
     font-optical-sizing: auto;
 }
 
-body {
+* {
     font-family: "Inter Normal", sans-serif;
     font-weight: 275;
-        --bg: #f2f2f2;
+}
+
+body {
+    --bg: #f2f2f2;
     --fg: #404040;
         background-color: var(--bg);
         color: var(--fg);
