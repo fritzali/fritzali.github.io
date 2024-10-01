@@ -15,12 +15,10 @@
     font-optical-sizing: auto;
 }
 
-
 * {
     font-family: "Inter Normal", sans-serif;
     font-weight: 275;
 }
-
 
 body {
     --mid: hsl(0, 0%, 70%);
