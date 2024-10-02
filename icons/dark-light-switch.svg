@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" class="dark-light-icon" width="48px" height="48px" viewBox="0 0 40px 40px">
-    <circle class="disc" cx="50%" cy="50%" r="17.5%"/>
+<svg xmlns="http://www.w3.org/2000/svg" class="dark-light-icon" width="48px" height="48px" viewBox="0 0 36px 36px">
+    <circle class="disk" cx="50%" cy="50%" r="17.5%" transform-origin="center"/>
     <rect class="ray" x="7.5%" y="45%" rx="5%" ry="5%" width="20%" height="10%" transform-origin="center" transform="rotate(0)"/>
     <rect class="ray" x="7.5%" y="45%" rx="5%" ry="5%" width="20%" height="10%" transform-origin="center" transform="rotate(45)"/>
     <rect class="ray" x="7.5%" y="45%" rx="5%" ry="5%" width="20%" height="10%" transform-origin="center" transform="rotate(90)"/>
