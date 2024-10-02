@@ -52,12 +52,16 @@ body:has(#dark:checked) {
 }
 
 body:has(#dark:checked) .dark-light-icon .disk {
-    r: 10%;
+    r: 7.5%;
 }
 
 body:has(#dark:checked) .dark-light-icon .ray {
 	width: 10%;
-    x: 40%;
+    x: 45%;
+}
+
+.switch {
+    cursor: pointer;
 }
 
 .switch input {
