@@ -38,6 +38,7 @@ body:has(#dark:checked) {
 }
 
 .dark-light-icon circle,
+.dark-light-icon path,
 .dark-light-icon rect {
     transition: all 250ms ease-in-out;
     fill: var(--alt);
@@ -58,6 +59,14 @@ body:has(#dark:checked) .dark-light-icon .disk {
 body:has(#dark:checked) .dark-light-icon .ray {
 	width: 10%;
     x: 45%;
+}
+
+body:has(#dark:checked) .dark-light-icon .crescent {
+    transform: scale(1.25) translate(1.25px, 0);
+}
+
+body:has(#dark:checked) .dark-light-icon:hover .crescent {
+    transform: scale(1.375) translate(1.25px, 0);
 }
 
 .switch {
