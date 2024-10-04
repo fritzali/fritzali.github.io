@@ -22,7 +22,7 @@
 }
 
 body {
-	--alt: hsl(0, 0%, 5%);
+    --alt: hsl(0, 0%, 5%);
     --bg: hsl(0, 0%, 95%);
     --fg: hsl(0, 0%, 25%);
     background-color: var(--bg);
@@ -57,7 +57,7 @@ body:has(#dark:checked) .dark-light-icon .disk {
 }
 
 body:has(#dark:checked) .dark-light-icon .ray {
-	width: 10%;
+    width: 10%;
     x: 45%;
 }
 
