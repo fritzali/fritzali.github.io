@@ -25,22 +25,23 @@ body {
     --alt: hsl(0, 0%, 5%);
     --bg: hsl(0, 0%, 95%);
     --fg: hsl(0, 0%, 25%);
+    --time: 250ms;
     background-color: var(--bg);
     color: var(--fg);
-    transition: 250ms;
+    transition: var(--time);
 }
 
 body:has(#dark:checked) {
 	--alt: hsl(0, 0%, 95%);
     --bg: hsl(0, 0%, 5%);
     --fg: hsl(0, 0%, 75%);
-    transition: 250ms;
+    transition: var(--time);
 }
 
 .dark-light-icon circle,
 .dark-light-icon path,
 .dark-light-icon rect {
-    transition: all 250ms ease-in-out;
+    transition: all var(--time) ease-in-out;
     fill: var(--alt);
 }
 
