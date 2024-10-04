@@ -1,0 +1,16 @@
+<svg width="480px" height="480px" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+	<path d="M 0 0 L 0 100 L 100 100 L 100 0 Z" fill="red"/>
+	<circle class="disk" cx="50" cy="50" r="17.5" transform-origin="50 50"/>
+	<circle class="disk" cx="50" cy="50" r="17.5" transform-origin="50 50" fill="white"/>
+	<rect class="ray" x="7.5" y="45" rx="5" ry="5" width="20" height="10" transform-origin="50 50" transform="rotate(0)"/>
+	<rect class="ray" x="7.5" y="45" rx="5" ry="5" width="20" height="10" transform-origin="50 50" transform="rotate(45)"/>
+	<rect class="ray" x="7.5" y="45" rx="5" ry="5" width="20" height="10" transform-origin="50 50" transform="rotate(90)"/>
+	<rect class="ray" x="7.5" y="45" rx="5" ry="5" width="20" height="10" transform-origin="50 50" transform="rotate(135)"/>
+	<rect class="ray" x="7.5" y="45" rx="5" ry="5" width="20" height="10" transform-origin="50 50" transform="rotate(180)"/>
+	<rect class="ray" x="7.5" y="45" rx="5" ry="5" width="20" height="10" transform-origin="50 50" transform="rotate(225)"/>
+	<rect class="ray" x="7.5" y="45" rx="5" ry="5" width="20" height="10" transform-origin="50 50" transform="rotate(270)"/>
+	<rect class="ray" x="7.5" y="45" rx="5" ry="5" width="20" height="10" transform-origin="50 50" transform="rotate(315)"/>
+	<path class="star" d="M 16 26 q 3.5 -21 7 0 q 21 3.5 0 7 q -3.5 21 -7 0 q -21 -3.5 0 -7 Z" fill="white" transform-origin="19.5 29.5"/>
+	<path class="star" d="M 68 18 q 3.5 -21 7 0 q 21 3.5 0 7 q -3.5 21 -7 0 q -21 -3.5 0 -7 Z" fill="white" transform-origin="71.5 21.5"/>
+	<path class="star" d="M 28 78 q 3.5 -21 7 0 q 21 3.5 0 7 q -3.5 21 -7 0 q -21 -3.5 0 -7 Z" fill="white" transform-origin="31.5 81.5"/>
+</svg>
