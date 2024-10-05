@@ -64,7 +64,7 @@ body:has(#dark:checked) .dark-light-icon .star {
 }
 
 body:has(#dark:checked) .dark-light-icon:hover .star {
-    transform: scale(0.9);
+    transform: scale(0.8);
 }
 
 .switch {
