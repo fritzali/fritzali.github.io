@@ -38,36 +38,33 @@ body:has(#dark:checked) {
     transition: var(--time);
 }
 
-.dark-light-icon circle,
-.dark-light-icon path,
-.dark-light-icon rect {
+.dark-light-icon path {
     transition: all var(--time) ease-in-out;
     fill: var(--alt);
 }
 
 .dark-light-icon:hover .disk {
-    transform: scale(1.125);
+    d: path("M 30 50 a 20 20 0 0 1 40 0 a 20 20 0 0 1 -40 0 Z");
 }
 
 .dark-light-icon:hover .ray {
-    x: 5%;
-}
-
-body:has(#dark:checked) .dark-light-icon .disk {
-    r: 7.5%;
+    d: path("M 10 55 a 5 5 0 0 1 0 -10 h 15 0 v 0 10 Z");
 }
 
 body:has(#dark:checked) .dark-light-icon .ray {
-    width: 10%;
-    x: 45%;
+    d: path("M 45 55 a 5 5 0 0 1 0 -10 h 15 0 v 0 10 Z");
 }
 
-body:has(#dark:checked) .dark-light-icon .crescent {
-    transform: scale(1.25) translate(1.25px, 0);
+.dark-light-icon .star {
+    transform: scale(0);
 }
 
-body:has(#dark:checked) .dark-light-icon:hover .crescent {
-    transform: scale(1.375) translate(1.25px, 0);
+body:has(#dark:checked) .dark-light-icon .star {
+    transform: scale(1);
+}
+
+body:has(#dark:checked) .dark-light-icon:hover .star {
+    transform: scale(0.9);
 }
 
 .switch {
