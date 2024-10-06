@@ -23,6 +23,7 @@
 
 body {
     --alt: hsl(0, 0%, 5%);
+	--nav: hsl(0, 0%, 75%);
     --bg: hsl(0, 0%, 95%);
     --fg: hsl(0, 0%, 25%);
     --time: 250ms;
@@ -33,6 +34,7 @@ body {
 
 body:has(#dark:checked) {
 	--alt: hsl(0, 0%, 95%);
+	--nav: hsl(0, 0%, 25%);
     --bg: hsl(0, 0%, 5%);
     --fg: hsl(0, 0%, 75%);
     transition: var(--time);
@@ -76,3 +78,31 @@ body:has(#dark:checked) .dark-light-icon:hover .star {
     width: 0;
     height: 0;
 }
+
+/*
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: var(--nav);
+}
+
+li {
+  float: left;
+}
+
+li a {
+  font-weight: 550;
+  display: block;
+  color: var(--fg);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #111;
+}
++/
