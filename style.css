@@ -23,7 +23,7 @@
 
 body {
     --alt: hsl(0, 0%, 5%);
-	--nav: hsl(0, 0%, 75%);
+/*	--nav: hsl(0, 0%, 75%); */
     --bg: hsl(0, 0%, 95%);
     --fg: hsl(0, 0%, 25%);
     --time: 250ms;
@@ -34,7 +34,7 @@ body {
 
 body:has(#dark:checked) {
 	--alt: hsl(0, 0%, 95%);
-	--nav: hsl(0, 0%, 25%);
+/*	--nav: hsl(0, 0%, 25%); */
     --bg: hsl(0, 0%, 5%);
     --fg: hsl(0, 0%, 75%);
     transition: var(--time);
@@ -101,7 +101,6 @@ li a {
   text-decoration: none;
 }
 
-/* Change the link color to #111 (black) on hover */
 li a:hover {
   background-color: #111;
 }
