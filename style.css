@@ -58,11 +58,11 @@ body:has(#dark:checked) .dark-light-icon .ray {
 }
 
 .dark-light-icon .star {
-    transform: scale(0);
+    transform: scale(0.0);
 }
 
 body:has(#dark:checked) .dark-light-icon .star {
-    transform: scale(1);
+    transform: scale(0.9);
 }
 
 body:has(#dark:checked) .dark-light-icon:hover .star {
