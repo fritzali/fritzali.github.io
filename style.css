@@ -79,6 +79,16 @@ body:has(#dark:checked) .dark-light-icon:hover .star {
     height: 0;
 }
 
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    display: inline;
+}
+
 /*
 ul {
   list-style-type: none;
