@@ -22,51 +22,10 @@
 }
 
 body {
-    --alt: hsl(0, 0%, 5%);
-/*	--nav: hsl(0, 0%, 75%); */
     --bg: hsl(0, 0%, 95%);
-    --fg: hsl(0, 0%, 25%);
-    --time: 250ms;
+    --fg: hsl(0, 0%, 15%);
     background-color: var(--bg);
     color: var(--fg);
-    transition: var(--time);
-}
-
-body:has(#dark:checked) {
-	--alt: hsl(0, 0%, 95%);
-/*	--nav: hsl(0, 0%, 25%); */
-    --bg: hsl(0, 0%, 5%);
-    --fg: hsl(0, 0%, 75%);
-    transition: var(--time);
-}
-
-.dark-light-icon path {
-    transition: all var(--time) ease-in-out;
-    fill: var(--alt);
-}
-
-.dark-light-icon:hover .disk {
-    d: path("M 30 50 a 20 20 0 0 1 40 0 a 20 20 0 0 1 -40 0 Z");
-}
-
-.dark-light-icon:hover .ray {
-    d: path("M 10 55 a 5 5 0 0 1 0 -10 h 15 0 v 0 10 Z");
-}
-
-body:has(#dark:checked) .dark-light-icon .ray {
-    d: path("M 45 55 a 5 5 0 0 1 0 -10 h 15 0 v 0 10 Z");
-}
-
-.dark-light-icon .star {
-    transform: scale(0.0);
-}
-
-body:has(#dark:checked) .dark-light-icon .star {
-    transform: scale(0.9);
-}
-
-body:has(#dark:checked) .dark-light-icon:hover .star {
-    transform: scale(0.8);
 }
 
 .switch {
@@ -86,32 +45,18 @@ ul {
 }
 
 li {
-    display: inline;
-}
-
-/*
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: var(--nav);
-}
-
-li {
-  float: left;
+    float: left;
 }
 
 li a {
-  font-weight: 550;
-  display: block;
-  color: var(--fg);
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
+    font-weight: 550;
+    display: block;
+    color: var(--fg);
+    text-align: center;
+    padding: 10px 10px;
+    text-decoration: none;
 }
 
 li a:hover {
-  background-color: #111;
+    font-weight: 750;
 }
-+/
