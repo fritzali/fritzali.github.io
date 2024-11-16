@@ -64,45 +64,32 @@ body {
     pointer-events: none;
 }
 
+.navigation .dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.navigation .dropdown .menu {
+    display: none;
+    position: absolute;
+    background-color: var(--bg);
+}
+
+.navigation .dropdown .menu a {
+    display: block;
+    color: var(--fg);
+    text-decoration: none;
+    padding: 5pt 10pt;
+}
+
+.navigation .dropdown:hover .menu {
+    display: block;
+}
+
 .main {
-    max-width: 80%;
+    max-width: 90%;
     margin-top: 55pt;
     margin-left: auto;
     margin-right: auto;
     text-align: left;
 }
-
-/*
-.switch {
-    cursor: pointer;
-}
-
-.switch input {
-    opacity: 0;
-    width: 0;
-    height: 0;
-}
-
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-li {
-    float: left;
-}
-
-li a {
-    font-weight: 350;
-    display: block;
-    color: var(--fg);
-    text-align: center;
-    padding: 10px 10px;
-    text-decoration: none;
-}
-
-li a:hover {
-    font-weight: 425;
-}
-*/
