@@ -51,6 +51,7 @@ body {
 
 .navigation a:hover {
     font-weight: 425;
+    cursor: pointer;
 }
 
 .navigation a::after {
@@ -65,21 +66,23 @@ body {
 }
 
 .navigation .dropdown {
-    position: relative;
     display: inline-block;
+    position: relative;
 }
 
 .navigation .dropdown .menu {
     display: none;
-    position: absolute;
+    position: fixed;
+    margin-top: -5pt;
     background-color: var(--bg);
 }
 
 .navigation .dropdown .menu a {
     display: block;
     color: var(--fg);
+    text-align: left;
     text-decoration: none;
-    padding: 5pt 10pt;
+    padding: 5pt 5pt;
 }
 
 .navigation .dropdown:hover .menu {
