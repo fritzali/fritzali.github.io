@@ -1,13 +1,35 @@
-.world {
-	viewBox: 0 0 2754 1398;
+svg {
+    --bg: hsla(0, 0%, 95%, 1);
+    --fg: hsla(0, 0%, 15%, 1);
+	--tbg: hsla(0, 0%, 85%, 0.75);
+	--tfg: hsla(0, 0%, 25%, 0.75);
+	--vis: hsla(0, 0%, 25%, 1);
+	--hov: hsla(0, 0%, 35%, 1);
 }
 
-.world .circlexx
-{
+.world .circlexx ,
+.world .subxx {
+	fill: var(--tbg);
+	stroke: var(--tfg);
 	opacity: 1;
+}
+
+.world .landxx {
+	fill: var(--fg);
+	stroke: var(--bg);
+}
+
+.world .oceanxx {
+	fill: var(--bg);
+	stroke: var(--fg);
+}
+
+.world .de ,
+.world .tr {
+	fill: var(--vis);
 }
 
 .world .de:hover ,
 .world .tr:hover {
-	fill: red;
+	fill: var(--hov);
 }
