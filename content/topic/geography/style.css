@@ -1,0 +1,13 @@
+.world {
+	viewBox: 0 0 2754 1398;
+}
+
+.world .circlexx
+{
+	opacity: 1;
+}
+
+.world .de:hover ,
+.world .tr:hover {
+	fill: red;
+}
