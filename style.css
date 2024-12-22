@@ -73,6 +73,7 @@ body {
 .navigation .dropdown .menu {
     display: none;
     position: fixed;
+    width: 84pt;
     margin-top: -5pt;
     background-color: var(--bg);
 }
@@ -95,4 +96,11 @@ body {
     margin-left: auto;
     margin-right: auto;
     text-align: left;
+}
+
+.main h1 a ,
+.main h2 a ,
+.main h3 a {
+    color: var(--fg);
+    text-decoration: none;
 }
