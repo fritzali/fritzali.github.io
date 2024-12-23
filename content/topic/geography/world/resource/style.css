@@ -3,18 +3,25 @@ svg {
     --fg: hsla(0, 0%, 15%, 1);
 	--tbg: hsla(0, 0%, 85%, 0.75);
 	--tfg: hsla(0, 0%, 25%, 0.75);
-	--vis: hsla(0, 0%, 25%, 1);
-	--hov: hsla(0, 0%, 35%, 1);
+	--tra: hsla(0, 0%, 65%, 0.75);
+	--hov: hsla(0, 0%, 25%, 1);
 }
 
 .world .circlexx ,
-.world .subxx {
+.world .subxx ,
+.world .noxx {
 	fill: var(--tbg);
 	stroke: var(--tfg);
-	opacity: 1;
 }
 
-.world .landxx {
+.world .circlexx:hover ,
+.world .subxx:hover ,
+.world .noxx:hover {
+	fill: var(--tra);
+}
+
+.world .landxx ,
+.world .limitxx {
 	fill: var(--fg);
 	stroke: var(--bg);
 }
@@ -24,12 +31,7 @@ svg {
 	stroke: var(--fg);
 }
 
-.world .de ,
-.world .tr {
-	fill: var(--vis);
-}
-
-.world .de:hover ,
-.world .tr:hover {
+.world .landxx:hover ,
+.world .limitxx:hover {
 	fill: var(--hov);
 }

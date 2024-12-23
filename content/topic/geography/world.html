@@ -1,0 +1,46 @@
+---
+---
+<!doctype html>
+<html lang='en'>
+    <head>
+        {% include header.html %}
+    </head>
+    <body>
+        {% include navigation.html %}
+        <div class='main'>
+            <h2>World Map</h2>
+            <p><object data='content/topic/geography/world/resource/world.svg'></object></p>
+            <p>
+                <label class='container'>
+                    <input type='checkbox' class='visit'/>
+                    <span class='checkmark'></span>
+                    visited
+                </label>
+                &emsp;
+                <label class='container'>
+                    <input type='checkbox' class='circle'/>
+                    <span class='checkmark'></span>
+                    small countries
+                </label>
+                &emsp;
+                <label class='container'>
+                    <input type='checkbox' class='sub'/>
+                    <span class='checkmark'></span>
+                    subnational territories
+                </label>
+                &emsp;
+                <label class='container'>
+                    <input type='checkbox' class='no'/>
+                    <span class='checkmark'></span>
+                    impermanent population
+                </label>
+                &emsp;
+                <label class='container'>
+                    <input type='checkbox' class='limit'/>
+                    <span class='checkmark'></span>
+                    limited recognition
+                </label>
+            </p>
+        </div>
+    </body>
+</html>
