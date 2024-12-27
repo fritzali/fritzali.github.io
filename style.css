@@ -39,6 +39,7 @@ body {
     overflow: hidden;
     position: fixed;
     background-image: linear-gradient(to top, hsla(0, 0%, 95%, 0), hsla(0, 0%, 95%, 0.5), var(--bg), var(--bg));
+    z-index: 1000;
 }
 
 .navigation a {
@@ -139,8 +140,8 @@ body {
 }
 
 .carousel input:checked {
-	transform: translateX(0);
-	pointer-event: none;
+	transform: translateX(0%);
+	pointer-events: none;
 	z-index: 0;
 }
 
