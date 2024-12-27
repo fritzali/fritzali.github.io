@@ -121,43 +121,6 @@ body {
 	overflow: hidden;
 }
 
-/* .carousel:before ,
-.carousel:after {
-	position: absolute;
-	z-index: 2;
-	width: 15%;
-	height: 100%;
-    font-weight: 425;
-    font-size: 2rem;
-	background-color: red;
-	color: var(--fg);
-	opacity: 0;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	pointer-events: none;
-}
-
-.carousel:before {
-	content: '<';
-    background-image: linear-gradient(to right, hsla(0, 0%, 95%, 75%), hsla(0, 0%, 95%, 15%));
-	left: 0%;
-	right: auto;
-}
-
-.carousel:after {
-	content: '>';
-    background-image: linear-gradient(to left, hsla(0, 0%, 95%, 75%), hsla(0, 0%, 95%, 15%));
-	left: auto;
-	right: 0%;
-}
-
-.carousel:hover:before ,
-.carousel:hover:after {
-	opacity: 0.5;
-} */
-
-/* I haven't found a way for IE and Edge to let me style inputs that way */
 .carousel input {
 	appearance: none;
 	display: block;
@@ -174,17 +137,6 @@ body {
 .carousel input:focus {
 	outline: none;
 }
-
-/* .carousel input:after {
-	content: attr(title);
-	position: absolute;
-	top: 1rem;
-	left: 1rem;
-	background-color: rgba(0,0,0,0.4);
-	color: white;
-	padding: .5rem;
-	font-size: 1rem;
-} */
 
 .carousel input:checked {
 	transform: translateX(0);
