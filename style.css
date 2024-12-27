@@ -23,6 +23,11 @@
     font-weight: 275;
 }
 
+i {
+    font-family: "Inter Italic", sans-serif;
+    font-weight: 275;
+}
+
 body {
     --bg: hsla(0, 0%, 95%, 1);
     --fg: hsla(0, 0%, 15%, 1);
@@ -183,8 +188,8 @@ body {
 }
 
 .carousel input:after {
-	content: attr(caption);
-	white-space: pre-line;
+	content: attr(number) ' of ' attr(total) '  –  ' attr(caption);
+	white-space: pre-wrap;
 	opacity: 0;
 	position: absolute;
 	height: 20%;
