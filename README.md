@@ -49,4 +49,4 @@ like.
 
   <pre>make kill</pre>
 
-View the pages at [`127.0.0.1:4000`](http://127.0.0.1:4000)
+View the page at [`127.0.0.1:4000`](http://127.0.0.1:4000) in your browser.
