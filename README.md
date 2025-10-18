@@ -9,3 +9,7 @@ Installed via [Bundler](https://bundler.io/docs.html). Written in [Ruby](https:/
 Tested using [Make](https://www.gnu.org/software/make/manual/).
 
 See current dependency versions [here](https://pages.github.com/versions/).
+
+### Cloning
+
+<pre>git clone https://fritzali:<i>PAT</i>@github.com/fritzali/fritzali.github.io.git website</pre>
