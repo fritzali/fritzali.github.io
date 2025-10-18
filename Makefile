@@ -1,8 +1,8 @@
-serve:
-	bundle exec jekyll serve --livereload --trace
+build:
+	jekyll build
 
-install:
-	bundle install
+serve:
+	jekyll serve --livereload --trace --detach
 
 kill:
-	kill $$(pgrep -f jekyll)
+	pkill -f jekyll
