@@ -49,4 +49,31 @@ like.
 
   <pre>make kill</pre>
 
-View the page at [`127.0.0.1:4000`](http://127.0.0.1:4000) in your browser.
+  View the page at [`127.0.0.1:4000`](http://127.0.0.1:4000) in your browser.
+
+### Domain
+
+To connect a **GitHub Pages** site with an [**INWX**](https://www.inwx.com/en) hosted domain, follow these steps:
+
+1. Sign in to the **INWX** web interface, navigate to the **Domain List** and access the **DNS** records via the gear icon. Add the following entries:
+
+   | NAME | TYPE  | PRIO |        VALUE        | TTL  |
+   | ---- | ----- | ---- | ------------------- | ---- |
+   |      |   A   |      |   185.199.108.153   | 3600 |
+   |      |   A   |      |   185.199.109.153   | 3600 |
+   |      |   A   |      |   185.199.110.153   | 3600 |
+   |      |   A   |      |   185.199.111.153   | 3600 |
+   | www  | CNAME |      | fritzali.github.io  | 3600 |
+   |      | AAAA  |      | 2606:50c0:8000::153 | 3600 |
+   |      | AAAA  |      | 2606:50c0:8001::153 | 3600 |
+   |      | AAAA  |      | 2606:50c0:8002::153 | 3600 |
+   |      | AAAA  |      | 2606:50c0:8003::153 | 3600 |
+
+   The **SOA** entry is provided by **INWX** so that no changes are needed here.
+
+2. Navigate to the repository **Settings** under the **Pages** header and add your **Custom Domain** `www.fritzali.de` into the respective field and save.
+3. After all checks have passed and a certificate has been issued, you can select **Enforce HTTPS** to disable **HTTP** connections altogether.
+4. If it has not happened automatically, create a `CNAME` file that just contains the domain string in your repository.
+5. Keep in mind that these changes might take a while to propagate, so stay patient and wait before trying to change settings for troubleshooting purposes.
+
+   *Adapted from [Marcel Epp](https://www.marcelepp.de/posts/2024/12/github-pages-domain-aufschalten/).*
