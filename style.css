@@ -59,6 +59,7 @@ body {
 
 
 .navigation {
+    background-color: var(--bg);
     display: flex;                         /* enable flexbox module */
     top: 0;
     position: fixed;
