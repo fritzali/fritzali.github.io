@@ -20,193 +20,103 @@
 
 * {
     font-family: "Inter Normal", sans-serif;
-    font-weight: 275;
+    font-weight: 300;
+}
+
+b {
+    font-family: "Inter Normal", sans-serif;
+    font-weight: 600;
 }
 
 i {
     font-family: "Inter Italic", sans-serif;
-    font-weight: 275;
+    font-weight: 300;
 }
 
+
+
 body {
-    --bg: hsla(0, 0%, 95%, 1);
-    --fg: hsla(0, 0%, 15%, 1);
+    --bg: hsla(0, 0%, 9.5%, 1);     /* background color */
+    --fg: hsla(0, 0%, 95%, 1);      /* foreground color */
+    --hl: hsla(35, 80%, 60%, 1);    /* highlight color */
+    --w: 70%;                       /* relative content width */
     background-color: var(--bg);
     color: var(--fg);
+
+    /* make child flush with screen */
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.wrapper {
+    padding-top: 60pt;    /* vertical content offset */
+    width: var(--w);
+    margin: 0 auto;       /* horizontal centering */
 }
 
 
 
 .navigation {
+    display: flex;                         /* enable flexbox module */
     top: 0;
-    width: 100%;
-    height: 99pt;
-    overflow: hidden;
     position: fixed;
-    background-image: linear-gradient(to top, hsla(0, 0%, 95%, 0), hsla(0, 0%, 95%, 0.5), var(--bg), var(--bg));
-    z-index: 1000;
+    width: 100%;
+    height: 40pt;
+    overflow: hidden;
+    z-index: 1000;                         /* set as top most element */
+    align-items: center;                   /* center child vertically */
+    justify-content: center;               /* center child horizontally */
+    border-bottom: 1pt solid var(--fg);    /* draw border line */
+
+    /* make child flush with screen */
+    margin: 0;
+    padding: 0;
 }
 
-.navigation a {
-    font-weight: 350;
+.navigation .container {
+    display: flex;
+    width: var(--w);
+
+    /* make child flush with screen */
+    margin: 0;
+    padding: 0;
+}
+
+.navigation .container a:first-child {
+
+    /* make left most element flush with content */
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.navigation .container a:last-child {
+
+    /* make right most element flush with content */
+    margin-right: 0;
+    padding-right: 0;
+}
+
+.navigation .container a {
+    transition: all 250ms ease;    /* transition animation */
     color: var(--fg);
+    font-weight: 400;
     display: inline-flex;
-    float: none;
-    flex-direction: column;
     align-items: center;
     text-align: center;
     text-decoration: none;
+    white-space: nowrap;
     padding: 10pt 5pt;
 }
 
-.navigation a:hover {
-    font-weight: 425;
-    cursor: pointer;
-}
+.navigation .container a:nth-of-type(2) {
 
-.navigation a::after {
-    font-weight: 425;
-    content: attr(pseudo);
-    height: 0;
-    opacity: 0;
-    overflow: hidden;
-    visibility: hidden;
-    user-select: none;
-    pointer-events: none;
-}
-
-.navigation .dropdown {
-    display: inline-block;
-    position: relative;
-}
-
-.navigation .dropdown .menu {
-    display: none;
-    position: fixed;
-    width: 84pt;
-    margin-top: -5pt;
-    background-color: var(--bg);
-}
-
-.navigation .dropdown .menu a {
-    display: block;
-    color: var(--fg);
-    text-align: left;
-    text-decoration: none;
-    padding: 5pt 5pt;
-}
-
-.navigation .dropdown:hover .menu {
-    display: block;
-}
-
-
-
-.main {
-    max-width: 90%;
-    margin-top: 55pt;
+    /* set all elements except first one to be on right side */
     margin-left: auto;
-    margin-right: auto;
-    text-align: left;
 }
 
-.main h1 a ,
-.main h2 a ,
-.main h3 a {
-    color: var(--fg);
-    text-decoration: none;
-}
-
-
-
-.carousel {
-	position: relative;
-	display: block;
-	width: 600pt;
-	height: 400pt;
-	overflow: hidden;
-}
-
-.carousel input {
-	appearance: none;
-	display: block;
-	width: 100%;
-	height: 100%;
-	position: absolute;
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center;
-	transform: translateX(100%);
-	z-index: 1;
-}
-
-.carousel input:focus {
-	outline: none;
-}
-
-.carousel input:checked {
-	transform: translateX(0%);
-	z-index: 0;
-}
-
-.carousel input:not(checked):before {
-	content: '<';
-    font-weight: 425;
-    font-size: 1rem;
-	color: var(--fg);
-	background-color: var(--bg);
-	opacity: 0;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	position: absolute;
-    aspect-ratio : 1 / 1;
-	width: 5%;
-	top: 47.5%;
-	left: -99.5%;
-}
-
-.carousel input:checked + input:before {
-	content: '>';
-	left: -6.1%;
-}
-
-.carousel:hover input:not(checked):before {
-	opacity: 1;
-}
-
-.carousel:hover input:checked:before {
-	opacity: 1;
-}
-
-.carousel input:checked:before {
-	display: none;
-}
-
-.carousel input:checked + input ~ input:before {
-	display: none;
-}
-
-.carousel input:after {
-	content: attr(number) ' of ' attr(total) ' – ' attr(caption);
-	white-space: pre-line;
-	opacity: 0;
-	position: absolute;
-	height: 20%;
-	width: 98.4%;
-	bottom: 1.3%;
-	left: 0.5%;
-	background-color: var(--bg);
-	color: var(--fg);
-	padding: 0.5rem;
-	font-size: 0.9rem;
-	overflow: hidden;
-	overflow-y: auto;
-	display: flex;
-	box-sizing: border-box;
-	scrollbar-width: none;
-}
-
-.carousel:hover input:after {
-	opacity: 1;
+.navigation a:not(.home):hover {
+    transition: all 250ms ease;    /* transition animation */
+    color: var(--hl);
 }
