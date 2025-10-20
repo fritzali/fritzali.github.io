@@ -1,10 +1,16 @@
 <nav class='navigation'>
             <div class='container'>
                 <a class='home' href='/' pseudo='Home'><h3><b>Fritz Ali</b>&nbsp;Agildere</h3></a>
-                <a href='/content/about.html' pseudo='About'>About</a>
+        {% for item in site.data.navigation %}
+            {% assign current_url = page.url | split: '/' %}
+            {% assign navigation_url = item.url | split: '/' %}
+                <a {% if current_url[1] == navigation_url[1] %}class='active'{% endif %} href='{{ item.url | relative_url }}'>{{ item.title }}</a>
+        {% endfor %}
+<!--                <a href='/content/about.html' pseudo='About'>About</a>
                 <a href='/content/blog.html' pseudo='Blog'>Blog</a>
                 <a href='/content/contact.html' pseudo='Contact'>Contact</a>
                 <a href='/content/projects.html' pseudo='Projects'>Projects</a>
                 <a href='/content/resume.html' pseudo='Resume'>Résumé</a>
+-->
             </div>
         </nav>
