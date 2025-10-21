@@ -4,3 +4,4 @@
                 <a{% if current_url[1] == navigation_url[1] %} class='active'{% endif %} href='{{ item.url | relative_url }}' pseudo='{{ item.title }}'>{{ item.title }}</a>{% endfor %}
             </div>
         </nav>
+        <div class='scrollbar'></div>

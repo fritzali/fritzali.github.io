@@ -119,9 +119,32 @@ body {
 }
 
 .navigation .container a:not(.home):hover {
-    color: var(--hl);
+    color: var(--hl);    /* highlight on mouse cursor hover */
 }
 
 .navigation .container a.active {
-    color: var(--hl)
+    color: var(--hl)    /* highlight current parent directory */
+}
+
+@keyframes grow {
+
+    /* define animation keyframes */
+    from { width: 0%; }
+    to { width: 100%; }
+}
+
+.scrollbar {
+    position: fixed;
+    top: 40pt;
+    left: 0;
+    width: 0;
+    height: 1pt;
+    background: var(--hl);    /* use highlight color for scolling indicator */
+    z-index: 9999;
+
+    /* link animation to document scroll */
+    animation-name: grow;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    animation-timeline: scroll();
 }
