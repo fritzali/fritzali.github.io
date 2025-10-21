@@ -36,10 +36,10 @@ i {
 
 
 body {
-    --bg: hsla(0, 0%, 9.5%, 1);     /* background color */
-    --fg: hsla(0, 0%, 95%, 1);      /* foreground color */
-    --hl: hsla(35, 80%, 60%, 1);    /* highlight color */
-    --w: 70%;                       /* relative content width */
+    --bg: hsl(0 0% 9.5%);     /* background color */
+    --fg: hsl(0 0% 95%);      /* foreground color */
+    --hl: hsl(35 80% 60%);    /* highlight color */
+    --w: 70%;                   /* relative content width */
     background-color: var(--bg);
     color: var(--fg);
 
@@ -59,17 +59,18 @@ body {
 
 
 .navigation {
-    background-color: var(--bg);
-    display: flex;                         /* enable flexbox module */
+    background-color: hsla(from var(--bg) h s l / 0.85);    /* transparent background */
+    backdrop-filter: blur(2pt);                              /* frosted glass effect */
+    display: flex;                                           /* enable flexbox module */
     top: 0;
     position: fixed;
     width: 100%;
     height: 40pt;
     overflow: hidden;
-    z-index: 1000;                         /* set as top most element */
-    align-items: center;                   /* center child vertically */
-    justify-content: center;               /* center child horizontally */
-    border-bottom: 1pt solid var(--fg);    /* draw border line */
+    z-index: 1000;                                           /* set as top most element */
+    align-items: center;                                     /* center child vertically */
+    justify-content: center;                                 /* center child horizontally */
+    border-bottom: 1pt solid var(--fg);                      /* draw border line */
 
     /* make child flush with screen */
     margin: 0;
