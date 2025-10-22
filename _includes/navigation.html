@@ -1,6 +1,6 @@
 <nav class='navigation'>
             <div class='container'>
-                {% if page.url == '/' %}<a></a>{% else %}<a class='home' href='/' pseudo='Home'><h3><b>Fritz Ali</b>&nbsp;Agildere</h3></a>{% endif %}{% for item in site.data.navigation %}{% assign current_url = page.url | split: '/' %}{% assign navigation_url = item.url | split: '/' %}
+                {% if page.url == '/' %}<a></a>{% else %}<a class='home' href='/' pseudo='Home'><h3><b>Fritz&nbsp;Ali</b>&nbsp;Agildere</h3></a>{% endif %}{% for item in site.data.navigation %}{% assign current_url = page.url | split: '/' %}{% assign navigation_url = item.url | split: '/' %}
                 <a{% if current_url[1] == navigation_url[1] %} class='active'{% endif %} href='{{ item.url | relative_url }}' pseudo='{{ item.title }}'>{{ item.title }}</a>{% endfor %}
             </div>
         </nav>
