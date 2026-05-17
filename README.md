@@ -51,6 +51,12 @@ like.
 
   View the page at [`127.0.0.1:4000`](http://127.0.0.1:4000) in your browser.
 
+### Linking
+
+By creating symbolic links in parent directories, we keep the site location structure clean:
+
+<pre>ln -s <i>actual</i> <i>desired</i></pre>
+
 ### Domain
 
 To connect a **GitHub Pages** site with an [**INWX**](https://www.inwx.com/en) hosted domain, follow these steps:
