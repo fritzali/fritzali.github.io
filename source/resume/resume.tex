@@ -1,0 +1,340 @@
+\documentclass[11pt,a4paper]{article}
+
+% --- Core Packages --- %
+\usepackage[en-US]{datetime2}
+\usepackage[utf8]{inputenc}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+\usepackage{xcolor}
+
+% --- Margin Setup --- %
+\usepackage[
+    a4paper,
+    left=20mm,
+    right=20mm,
+    top=20mm,
+    bottom=20mm
+]{geometry}
+
+% --- Font Settings --- %
+\usepackage{fontspec}
+
+\setmainfont{DejaVuSans.ttf}[
+	BoldFont = DejaVuSans-Bold.ttf,
+	ItalicFont = DejaVuSans-Oblique.ttf,
+	BoldItalicFont = DejaVuSans-BoldOblique.ttf,
+]
+\setsansfont{DejaVuSans.ttf}[
+	BoldFont = DejaVuSans-Bold.ttf,
+	ItalicFont = DejaVuSans-Oblique.ttf,
+	BoldItalicFont = DejaVuSans-BoldOblique.ttf
+]
+\renewcommand{\familydefault}{\sfdefault}
+
+\newfontfamily\customfont{Montserrat}
+
+\usepackage{unicode-math}
+\setmathfont{texgyredejavu-math.otf}
+
+% --- Hyperref Configuration --- %
+\usepackage{hyperref}
+\definecolor{accenttext}{RGB}{31, 77, 122}	% Headings
+\definecolor{linktext}{RGB}{47, 115, 182}	% Links
+\definecolor{bodytext}{RGB}{36, 51, 66}		% Text
+\definecolor{infotext}{RGB}{182, 191, 201}	% Info
+
+\hypersetup{
+	colorlinks=true,
+	linkcolor=linktext,
+	urlcolor=linktext,
+	pdfauthor={Fritz Ali Agildere},
+	pdftitle={Résumé – Fritz Ali Agildere}
+}
+
+% --- Global Body Color --- %
+\color{bodytext}
+
+% --- Custom Section Styling --- %
+\titleformat{\section}
+	{\large\bfseries\color{accenttext}}					% Main
+	{}													% Label
+	{0em}												% Separation
+	{}													% Code
+	[\vspace{2pt}\color{accenttext}\hrule height 1.0pt]	% Rule
+
+\titlespacing{\section}{0pt}{14pt}{6pt}
+
+% --- Define Custom Commands --- %
+\newcommand{\cventry}[4]{
+	\noindent \textbf{#1} {\small\hfill #2} \\
+	\noindent {\footnotesize\textit{#3} \hfill \textit{#4}} \\
+	\vspace{-7pt}
+}
+\newcommand{\dash}[0]{
+	\rule[0.5ex]{1.125ex}{0.75pt}
+}
+
+
+
+% --- Page Style Setup --- %
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\fancyfoot[R]{\textcolor{infotext}{\scriptsize \textit{Last Updated: \DTMenglishmonthname{\the\month} \the\year}}}
+
+% =========================================================================
+\begin{document} % BEGIN DOCUMENT
+% =========================================================================
+
+% =========================================================================
+% HEADER
+% =========================================================================
+\begin{center}
+	{\customfont\huge\color{accenttext}\addfontfeatures{LetterSpace=1.5,FakeBold=1.5}FRIT{\kern0.5pt}Z ALI AGILDERE} \\
+	\vspace{7pt}
+	\small
+	\href{mailto:fritz.agildere@udo.edu}{fritz.agildere@udo.edu} {\normalsize$\textbullet$}
+	\href{tel:+4915752011899}{+49 1575 2011899} {\normalsize$\textbullet$}
+	\href{https://www.openstreetmap.org/search?query=belgrade,serbia}{Belgrade, Serbia} {\normalsize$\textbullet$}
+	\href{https://github.com/fritzali}{github.com/fritzali}
+\end{center}
+
+% =========================================================================
+% RESEARCH INTERESTS
+% =========================================================================
+\section{Research Interests}
+\noindent Active Galactic Nuclei \& Feedback $\circ$ Galaxy \& Cluster Evolution 
+$\circ$ Accretion Phenomena $\circ$ Relativistic Fluid Dynamics
+$\circ$ Compact Object Physics $\circ$ Multimessenger Astronomy
+
+
+% =========================================================================
+% EDUCATIONAL HISTORY
+% =========================================================================
+\section{Educational History}
+
+\cventry{Master of Science in Astrophysics}{October 2025\dash September 2027}
+{\href{https://www.master-mass.eu/}{Master in Astrophysics and Space Science}}{Multiple Countries}
+\begin{itemize}[itemsep=-2pt, topsep=0pt, leftmargin=14pt, label={\raisebox{-0.15ex}{\normalsize\textbullet}}]
+	\item International Degree Program Delivered by a Consortium of European Universities:
+	\begin{itemize}[itemsep=0pt, topsep=-2pt, leftmargin=14pt, label={\raisebox{-0.15ex}{\normalsize\circ}}]
+		\item \href{https://web.uniroma2.it/en}{University of Rome Tor Vergata} (Italy)
+		\item \href{https://univ-cotedazur.eu/}{Côte d'Azur University} (France)
+		\item \href{https://www.uni-bremen.de/en/}{University of Bremen} (Germany)
+		\item \href{https://www.bg.ac.rs/home/}{University of Belgrade} (Serbia)
+	\end{itemize}
+	\item Fully Funded Recipient of an \href{https://erasmus-plus.ec.europa.eu/opportunities/individuals/students/erasmus-mundus-joint-masters}
+		  {Erasmus Mundus Joint Master} Scholarship.
+	\item Current Average Grade: 28.8{\kern2pt}/{\kern2pt}30.0
+\end{itemize}
+
+\vspace{7pt}
+
+\cventry{Master of Science in Physics (Transferred)}{October 2024\dash September 2025}
+{\href{https://www.tu-dortmund.de/en/}{Technical University of Dortmund}}{Germany}
+\begin{itemize}[itemsep=-2pt, topsep=0pt, leftmargin=14pt, label={\raisebox{-0.15ex}{\normalsize\textbullet}}]
+    \item Completed Graduate Level Coursework in Theoretical Elementary Particle Physics and Advanced Quantum Mechanics, as well as
+		  Specialized Laboratory Experiments.
+    \item Transitioned to Specialized International Degree Program Dedicated to Astrophysics.
+	\item Overall Grade: 1.5 ({\kern1pt}Very Good{\kern1pt}) 
+\end{itemize}
+
+\vspace{7pt}
+
+\cventry{Bachelor of Science in Physics}{October 2021\dash September 2024}
+{\href{https://www.tu-dortmund.de/en/}{Technical University of Dortmund}}{Germany}
+\begin{itemize}[itemsep=-2pt, topsep=0pt, leftmargin=14pt, label={\raisebox{-0.15ex}{\normalsize\textbullet}}]
+	\item Final Thesis: \textit{Neutrinos via Charm Decays in Astrophysical Sources} \\
+		  {\footnotesize\textit{\href{https://www.tu-dortmund.de/en}{Technical University of Dortmund} \&
+								\href{https://www.ruhr-uni-bochum.de/en}{Ruhr University Bochum}}}
+	\begin{itemize}[itemsep=0pt, topsep=-2pt, leftmargin=14pt, label={\raisebox{-0.15ex}{\normalsize\circ}}]
+		\item Decays of Short Lived Charmed Hadrons Potentially Contribute Significantly to Total Neutrino Flux at Very High Energies.
+		\item Estimated Relative Importance in Emission from Newborn Magnetars and Accretion Disks in Galactic Cores through Semianalytical Approach.
+		\item Explored Future Detection Prospects and Identified Issues with Current Literature.
+		\item Student Participation in the General Assembly of the Collaborative Research Center
+			  \href{https://www.sfb1491.ruhr-uni-bochum.de/}{\textit{Cosmic Interacting Matters}} at
+			  \href{https://www.ruhr-uni-bochum.de/en}{Ruhr University Bochum}.
+	\end{itemize}
+	\item Overall Grade: 1.3 ({\kern1pt}Very Good{\kern1pt})
+	\begin{itemize}[itemsep=0pt, topsep=-2pt, leftmargin=14pt, label={\raisebox{-0.15ex}{\normalsize\circ}}]
+		\item Research Project: 1.0 ({\kern1pt}Very Good{\kern1pt})
+	\end{itemize}
+\end{itemize}
+
+% =========================================================================
+% ACADEMIC EMPLOYMENT
+% =========================================================================
+\section{Academic Employment}
+\cventry{Teaching Assistant}{April 2023\dash September 2025}{\href{https://physik.tu-dortmund.de/en/}{Department of Physics},
+\href{https://www.tu-dortmund.de/en/}{Technical University of Dortmund}}{Germany}
+\begin{itemize}[itemsep=-2pt, topsep=0pt, leftmargin=0pt, label={}]
+	\item Instructed Students, Supervised Foundational Experiments and Graded Scientific Reports for Introductory Laboratory Course
+		  in the Undergraduate Physics Program.
+\end{itemize}
+
+\vspace{7pt}
+
+\cventry{Teaching Assistant}{September 2024\dash October 2024}{\href{https://physik.tu-dortmund.de/en/}{Department of Physics},
+\href{https://www.tu-dortmund.de/en/}{Technical University of Dortmund}}{Germany}
+\begin{itemize}[itemsep=-2pt, topsep=0pt, leftmargin=0pt, label={}]
+	\item Tutored Science and Engineering Students for the Mathematical Preliminary Course.
+\end{itemize}
+
+\vspace{7pt}
+
+\cventry{Teaching Assistant}{October 2022\dash March 2023}{\href{https://cs.tu-dortmund.de/en/}{Department of Computer Science}, 
+\href{https://www.tu-dortmund.de/en/}{Technical University of Dortmund}}{Germany}
+\begin{itemize}[itemsep=-2pt, topsep=0pt, leftmargin=0pt, label={}]
+	\item Taught Students in Practical Course for the Introduction to Programming Module.
+\end{itemize}
+
+% =========================================================================
+% PROFESSIONAL DEVELOPMENT
+% =========================================================================
+
+\section{Professional Development}
+% \cventry{International Conference of Physics Students}{August 2026}
+% {test}{Morocco}
+% 
+% \cventry{Conference on Active Galactic Nuclei and Gravitational Lensing}{July 2026}
+% {test}{Serbia}
+\cventry{Winter School on Modern Methodologies in Space Science}{February 2026}
+{\href{https://www.master-mass.eu/}{Master in Astrophysics and Space Science},
+\href{https://web.uniroma2.it/en}{University of Rome Tor Vergata}}{Italy}
+\begin{itemize}[itemsep=-2pt, topsep=0pt, leftmargin=0pt, label={}]
+	\item Engaged in Academic School Workshops Exploring Advanced Data Science Applications, Machine Learning Pipelines and Bayesian Inference for Contemporary Space Sciences.
+\end{itemize}
+
+\vspace{7pt}
+
+\cventry{German Italian Physics Exchange}{September 2025}
+{\href{https://ai-sf.it/gipe/}{Italian Association of Physics Students},
+\href{https://portale.units.it/en}{University of Trieste}}{Italy}
+\begin{itemize}[itemsep=-2pt, topsep=0pt, leftmargin=0pt, label={}]
+	\item Visited Bilateral Scientific Exchange Conference Exploring Advanced Research Facilities and Cutting Edge Theoretical Physics Methodologies.
+\end{itemize}
+
+\vspace{7pt}
+
+\cventry{Lights of Tuscany}{May 2025}
+{\href{https://ai-sf.it/lot/}{Italian Association of Physics Students},
+\href{https://www.unipi.it/en/}{University of Pisa} \& \href{https://www.unifi.it/en}{University of Florence}}{Italy}
+\begin{itemize}[itemsep=-2pt, topsep=0pt, leftmargin=0pt, label={}]
+	\item Attended International Physics Conference Seminar Series Focusing on Quantum Optics, Photonics and Contemporary Research Methodologies.
+\end{itemize}
+
+\vspace{7pt}
+
+\cventry{International Conference of Physics Students}{August 2024}
+{\href{https://gaps.org.ge/icps}{Georgian Association of Physics Students},
+\href{https://freeuni.edu.ge/en/}{Free University of Tbilisi}}{Georgia}
+\begin{itemize}[itemsep=-2pt, topsep=0pt, leftmargin=0pt, label={}]
+	\item Participated in Global Physics Forum Connecting Distinguished Researchers and Student Lecturers Across Diverse Fields of Study.
+\end{itemize}
+
+% =========================================================================
+% AWARDS & HONORS
+% =========================================================================
+
+\section{Awards \& Honors}
+\cventry{Erasmus Mundus Joint Master Scholarship}{October 2025\dash September 2027}
+{\href{https://www.eacea.ec.europa.eu/scholarships_en}{European Education and Culture Executive Agency}}{Multiple Countries}
+\begin{itemize}[itemsep=-2pt, topsep=0pt, leftmargin=0pt, label={}]
+	\item Awarded a Highly Competitive Merit Based Full Scholarship Funded by the European Union for the
+	\href{https://www.master-mass.eu/}{Master in Astrophysics and Space Science} Selected From Global Pool of Applicants.
+\end{itemize}
+
+\vspace{7pt}
+
+\cventry{Scholarship Nomination}{June 2021}
+{\href{https://www.mgwat.de/}{Märkische Schule Wattenscheid}}{Germany}
+\begin{itemize}[itemsep=-2pt, topsep=0pt, leftmargin=0pt, label={}]
+	\item Nominated by High School Leadership for the Prestigious \href{https://www.studienstiftung.de/en}{German Academic Scholarship Foundation}
+		  as a Distinction for Graduates Showing Academic Excellence Nationwide.
+\end{itemize}
+
+\vspace{7pt}
+
+\cventry{High School Graduation Honors}{June 2021}
+{\href{https://www.mgwat.de/}{Märkische Schule Wattenscheid}}{Germany}
+\begin{itemize}[itemsep=-2pt, topsep=0pt, leftmargin=14pt, label={\raisebox{-0.15ex}{\normalsize\textbullet}}]
+    \item Recognition by the Minister President as a Top Performing Graduate in the State.
+	\item \href{https://www.dpg-physik.de/?set_language=en}{German Physical Society} Award for Outstanding Achievements in Physics.
+	\item \href{https://www.mathematik.de/en}{German Mathematical Society} Award for Outstanding Achievements in Mathematics.
+\end{itemize}
+
+% =========================================================================
+% SKILLS & EXPERIENCE
+% =========================================================================
+
+\section{Skills \& Experience}
+\noindent \textbf{Programming}
+\begin{itemize}[itemsep=-2pt, topsep=0pt, leftmargin=0pt, label={}]
+	\item Python $\circ$ C $\circ$ C++ $\circ$ Java $\circ$ HTML $\circ$ CSS $\circ$ Unix Shell Script $\circ$ MATLAB $\circ$ \LaTeX
+\end{itemize}
+
+\vspace{7pt}
+
+\noindent \textbf{Libraries}
+\begin{itemize}[itemsep=-2pt, topsep=0pt, leftmargin=0pt, label={}]
+	\item numpy $\circ$ scipy $\circ$ pandas $\circ$ matplotlib $\circ$ sklearn $\circ$ astropy $\circ$ astroquery
+\end{itemize}
+
+\vspace{7pt}
+
+\noindent \textbf{Languages}
+\begin{itemize}[itemsep=-2pt, topsep=0pt, leftmargin=0pt, label={}]
+	\item Native German $\circ$ Fluent English $\circ$ Basic Turkish $\circ$ Elementary French \& Spanish
+\end{itemize}
+
+\vspace{7pt}
+
+\noindent \textbf{Engagement}
+\begin{itemize}[itemsep=-2pt, topsep=2pt, leftmargin=14pt, label={\raisebox{-0.15ex}{\normalsize\textbullet}}]
+	\item Ongoing Membership in Scientific Networks and Student Organizations:
+	\begin{itemize}[itemsep=0pt, topsep=-2pt, leftmargin=14pt, label={\raisebox{-0.15ex}{\normalsize\circ}}]
+		\item \href{https://www.dpg-physik.de/vereinigungen/fachuebergreifend/ak/akjdpg?set_language=en}{Young German Physical Society}
+		\item \href{https://iaps.info/}{International Association of Physics Students}
+	\end{itemize}
+	\item Organizing Role for \href{https://www.dpg-physik.de/?set_language=en}{German Physical Society} High School Graduate Meeting.
+	\item Completed Study Abroad Year at Canadian \href{https://pdhs.ccrce.ca/}{High School} in
+		  \href{https://www.openstreetmap.org/search?query=pugwash,canada}{Pugwash}.
+	\item Volunteer in \href{https://tiny-forest-friends.de/}{Tiny Forest} Local Urban Environmental Project.
+\end{itemize}
+
+% =========================================================================
+% RELEVANT BACKGROUND
+% =========================================================================
+
+\section{Relevant Background}
+\begin{itemize}[itemsep=-2pt, topsep=0pt, leftmargin=0pt, label={}]
+	\item \textbf{Mathematics:} Real \& Complex Valued Analysis $\circ$ Function \& Distribution Theory $\circ$ Linear
+	Algebra \& Operators $\circ$ Ordinary \& Partial Differential Equations $\circ$ Variational Calculus $\circ$
+	Multidimensional Integral \& Differential Calculus $\circ$ Spectral Analysis $\circ$ Fourier \& Laplace
+	Integral Transformations $\circ$ Hilbert Spaces $\circ$ Data Mining \& Analysis $\circ$ Machine Learning
+	Applications $\circ$ Statistical \& Numerical Methods $\circ$ Differential Forms $\circ$ Group Theory
+\end{itemize}
+
+\vspace{7pt}
+
+\begin{itemize}[itemsep=-2pt, topsep=0pt, leftmargin=0pt, label={}]
+	\item \textbf{Physics:} Analytical Mechanics \& Chaotic Systems $\circ$ Classical Electrodynamics $\circ$ Optics $\circ$
+	Quantum Mechanics $\circ$ Quantum Field Theory $\circ$ Renormalization $\circ$ Nuclear \& Elementary
+	Particle Physics $\circ$ Thermodynamics \& Statistics $\circ$ Solid State Physics $\circ$ Special \& General
+	Relativity $\circ$ Fluid Dynamics Simulations $\circ$ Introductory \& Advanced Laboratory
+\end{itemize}
+
+\vspace{7pt}
+
+\begin{itemize}[itemsep=-2pt, topsep=0pt, leftmargin=0pt, label={}]
+	\item \textbf{Astrophysics:} Astroparticle Physics $\circ$ Radiative Processes $\circ$ Stellar Astrophysics $\circ$ Active
+	Galactic Nuclei $\circ$ Interstellar Matter $\circ$ Computational Astrobiology $\circ$ Astrophysical Plasma
+	Spectroscopy \& Dynamics $\circ$ Cosmology $\circ$ Cosmic Rays 
+\end{itemize}
+
+% =========================================================================
+\end{document} % END DOCUMENT
+% =========================================================================
