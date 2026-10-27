@@ -1,4 +1,4 @@
-<section class='cv'>
+<section class='cv' id='{{ include.section.title | slugify }}'>
                 <h3>{{ include.section.title }}</h3>
                 {%- if include.section.items %}
                 {% include cv/list.html items=include.section.items %}

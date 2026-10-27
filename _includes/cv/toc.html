@@ -1,0 +1,7 @@
+<nav class='cv-toc'>
+                    <ul>
+                        {%- for section in site.data.cv.sections %}
+                        <li><a href='#{{ section.title | slugify }}'>{{ section.title }}</a></li>
+                        {%- endfor %}
+                    </ul>
+                </nav>

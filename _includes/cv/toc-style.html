@@ -1,0 +1,12 @@
+<style>
+            /* tie each section to its sidebar link */
+            {%- for section in site.data.cv.sections %}
+            {%- assign id = section.title | slugify %}
+            #{{ id }} { view-timeline-name: --{{ id }}; }
+            .cv-toc a[href='#{{ id }}'] { animation-timeline: --{{ id }}; }
+            @supports not (animation-timeline: view()) {
+                .cv-layout:has(#{{ id }}:target) a[href='#{{ id }}'] { color: var(--hl); border-color: var(--hl); }
+            }
+            {%- endfor %}
+            .cv-layout { timeline-scope: {% for section in site.data.cv.sections %}--{{ section.title | slugify }}{% unless forloop.last %}, {% endunless %}{% endfor %}; }
+        </style>

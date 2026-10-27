@@ -35,6 +35,16 @@ a, a:visited {
     color: var(--hl);
 }
 
+[id] {
+    scroll-margin-top: calc(var(--nav) + 12pt);    /* keep anchor targets below navigation */
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    html {
+        scroll-behavior: smooth;
+    }
+}
+
 
 
 body {
@@ -268,6 +278,65 @@ body {
     font-style: italic;
     text-align: right;
     margin-top: 24pt;
+}
+
+.resume {
+    container-type: inline-size;    /* size sidebar by available width */
+}
+
+.cv-toc {
+    display: none;
+}
+
+@container (min-width: 54rem) {
+    .cv-layout {
+        display: grid;
+        grid-template-columns: 42rem 1fr;
+        column-gap: 20pt;
+    }
+
+    .cv-toc {
+        display: block;
+        position: sticky;
+        top: calc(var(--nav) + 20pt);
+        align-self: start;
+        margin-top: 24pt;
+    }
+}
+
+.cv-toc ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.cv-toc a {
+    transition: color 250ms ease, border-color 250ms ease;
+    color: var(--fg);
+    display: block;
+    font-size: 0.85em;
+    font-weight: 400;
+    text-decoration: none;
+    padding: 3pt 0 3pt 10pt;
+    border-left: 1pt solid var(--ac);
+}
+
+.cv-toc a:hover {
+    color: var(--hl);
+}
+
+@keyframes toc-on {
+    from, to { color: var(--hl); border-color: var(--hl); }
+}
+
+@supports (animation-timeline: view()) {
+    .cv-toc a {
+
+        /* lit while section spans a line 20pt below navigation, 24pt heading gap included */
+        animation-name: toc-on;
+        animation-timing-function: linear;
+        animation-range: cover calc(100vh - var(--nav) - 44pt) cover calc(100% - var(--nav) - 20pt);
+    }
 }
 
 

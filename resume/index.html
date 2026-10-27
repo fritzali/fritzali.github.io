@@ -4,18 +4,24 @@
 <html lang='en'>
     <head>
         {% include header.html %}
+        {% include cv/toc-style.html %}
         <title>
             Résumé | Fritz Agildere
         </title>
     </head>
     <body>
         {% include navigation.html %}
-        <main class='wrapper'>
-            {% include cv/contact.html %}
-            {%- for section in site.data.cv.sections %}
-            {% include cv/section.html section=section %}
-            {%- endfor %}
-            <p class='cv updated'>Last Updated: {{ site.data.cv.updated }}</p>
+        <main class='wrapper resume'>
+            <div class='cv-layout'>
+                <div class='cv-body'>
+                    {% include cv/contact.html %}
+                    {%- for section in site.data.cv.sections %}
+                    {% include cv/section.html section=section %}
+                    {%- endfor %}
+                    <p class='cv updated'>Last Updated: {{ site.data.cv.updated }}</p>
+                </div>
+                {% include cv/toc.html %}
+            </div>
         </main>
     </body>
 </html>
