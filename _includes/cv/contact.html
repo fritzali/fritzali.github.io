@@ -1,4 +1,5 @@
 <section class='cv contact'>
-                <p class='name'>{{ site.data.contact.name }}</p>
-                {% include cv/list.html items=site.data.contact.links %}
+                <h1 class='name'>{{ site.data.contact.name }}</h1>
+                {%- assign links = site.data.contact.links | push: '[PDF CV](/resume.pdf)' %}
+                {% include cv/list.html items=links %}
             </section>
