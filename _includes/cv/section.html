@@ -1,0 +1,17 @@
+<section class='cv'>
+                <h3>{{ include.section.title }}</h3>
+                {%- if include.section.items %}
+                {% include cv/list.html items=include.section.items %}
+                {%- endif %}
+                {%- if include.section.groups %}
+                <dl>
+                    {%- for group in include.section.groups %}
+                    <dt>{{ group.label }}</dt>
+                    <dd>{% if group.items %}{% include cv/list.html items=group.items %}{% else %}{{ group.body | markdownify }}{% endif %}</dd>
+                    {%- endfor %}
+                </dl>
+                {%- endif %}
+                {%- for entry in include.section.entries %}
+                {% include cv/entry.html entry=entry %}
+                {%- endfor %}
+            </section>

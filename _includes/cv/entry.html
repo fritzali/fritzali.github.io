@@ -1,0 +1,9 @@
+<article>
+                    <header>
+                        <h4>{{ include.entry.title }}</h4>
+                        <span class='date'>{{ include.entry.start }}{% if include.entry.end %} – {{ include.entry.end }}{% endif %}</span>
+                        <span class='org'>{{ include.entry.org | markdownify | remove: '<p>' | remove: '</p>' | strip }}</span>
+                        <span class='place'>{{ include.entry.place }}</span>
+                    </header>
+                    {{ include.entry.body | markdownify }}
+                </article>

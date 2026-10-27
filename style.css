@@ -31,6 +31,10 @@ b, strong {
     font-weight: 600;
 }
 
+a, a:visited {
+    color: var(--hl);
+}
+
 
 
 body {
@@ -155,6 +159,79 @@ body {
 }
 
 
+.cv h3 {
+    color: var(--hl);
+    font-weight: 600;
+    font-size: 1.15em;
+    margin: 24pt 0 8pt;
+    padding-bottom: 3pt;
+    border-bottom: 1pt solid var(--ac);
+}
+
+.cv article {
+    margin-bottom: 12pt;
+}
+
+.cv header {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    column-gap: 12pt;
+    align-items: baseline;
+}
+
+.cv h4 {
+    font-weight: 600;
+    margin: 0;
+}
+
+.cv .date,
+.cv .place {
+    text-align: right;
+}
+
+.cv .date {
+    font-size: 0.9em;
+}
+
+.cv .org,
+.cv .place,
+.cv small {
+    font-size: 0.8em;
+    font-style: italic;
+}
+
+.cv p,
+.cv ul {
+    margin: 4pt 0;
+}
+
+.cv ul {
+    padding-left: 14pt;
+}
+
+.cv dt {
+    font-weight: 600;
+    margin-top: 8pt;
+}
+
+.cv dd {
+    margin: 0;
+}
+
+.cv .list {
+    padding: 0;
+    list-style: none;
+}
+
+.cv .list li {
+    display: inline;
+}
+
+.cv .list li + li::before {
+    content: " ∘ ";
+}
+
+
 
 @media (max-width: 680px) {
     body {
@@ -189,5 +266,14 @@ body {
 
     .navigation .container a:empty {
         display: none;
+    }
+
+    .cv header {
+        grid-template-columns: 1fr;
+    }
+
+    .cv .date,
+    .cv .place {
+        text-align: left;
     }
 }

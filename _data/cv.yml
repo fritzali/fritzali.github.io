@@ -1,0 +1,243 @@
+- title: Research Interests
+  items:
+    - Numerical Simulations
+    - Galactic & Cluster Evolution
+    - Black Hole Feeding & Feedback
+    - Active Galactic Nuclei
+    - Fluid Dynamics
+    - Compact Objects
+    - Multimessenger Astronomy
+
+- title: Educational History
+  entries:
+    - title: Master of Science in Astrophysics
+      start: October 2025
+      end: September 2027
+      org: "[Master in Astrophysics and Space Science](https://www.master-mass.eu/)"
+      place: Multiple Countries
+      body: |
+        - International Degree Program Delivered by a Consortium of European Universities:
+          - [University of Rome Tor Vergata](https://web.uniroma2.it/en) (Italy)
+          - [Côte d'Azur University](https://univ-cotedazur.eu/) (France)
+          - [University of Bremen](https://www.uni-bremen.de/en/) (Germany)
+          - [University of Belgrade](https://www.bg.ac.rs/home/) (Serbia)
+        - Fully Funded Recipient of an [Erasmus Mundus Joint Master](https://erasmus-plus.ec.europa.eu/opportunities/individuals/students/erasmus-mundus-joint-masters) Scholarship.
+        - Current Average Grade: 29.4 / 30.0
+
+    - title: Master of Science in Physics (Transferred)
+      start: October 2024
+      end: September 2025
+      org: "[Technical University of Dortmund](https://www.tu-dortmund.de/en/)"
+      place: Germany
+      body: |
+        - Completed Graduate Level Coursework in Theoretical Elementary Particle Physics and Advanced Quantum Mechanics, as well as Sophisticated Laboratory Experiments.
+        - Transitioned to Specialized International Degree Program Dedicated to Astrophysics.
+        - Overall Grade: 1.5 (Very Good)
+
+    - title: Bachelor of Science in Physics
+      start: October 2021
+      end: September 2024
+      org: "[Technical University of Dortmund](https://www.tu-dortmund.de/en/)"
+      place: Germany
+      body: |
+        - Final Thesis: *Neutrinos via Charm Decays in Astrophysical Sources*<br><small>[Technical University of Dortmund](https://www.tu-dortmund.de/en) & [Ruhr University Bochum](https://www.ruhr-uni-bochum.de/en)</small>
+          - Decays of Short Lived Charmed Hadrons Potentially Contribute Significantly to Total Neutrino Flux at Very High Energies.
+          - Estimated Relative Importance in Emission from Newborn Magnetars and Accretion Disks in Galactic Cores through Semianalytical Approach.
+          - Explored Future Detection Prospects and Identified Issues with Current Literature.
+          - Student Participation in the General Assembly of the Collaborative Research Center [*Cosmic Interacting Matters*](https://www.sfb1491.ruhr-uni-bochum.de/) at [Ruhr University Bochum](https://www.ruhr-uni-bochum.de/en).
+        - Overall Grade: 1.3 (Very Good)
+          - Research Project: 1.0 (Very Good)
+
+- title: Academic Employment
+  entries:
+    - title: Teaching Assistant
+      start: April 2023
+      end: September 2025
+      org: "[Department of Physics](https://physik.tu-dortmund.de/en/), [Technical University of Dortmund](https://www.tu-dortmund.de/en/)"
+      place: Germany
+      body: Instructed Students, Supervised Foundational Experiments and Graded Scientific Reports for Introductory Laboratory Course in the Undergraduate Physics Program.
+
+    - title: Teaching Assistant
+      start: September 2024
+      end: October 2024
+      org: "[Department of Physics](https://physik.tu-dortmund.de/en/), [Technical University of Dortmund](https://www.tu-dortmund.de/en/)"
+      place: Germany
+      body: Tutored Science and Engineering Students for the Mathematical Preliminary Course.
+
+    - title: Teaching Assistant
+      start: October 2022
+      end: March 2023
+      org: "[Department of Computer Science](https://cs.tu-dortmund.de/en/), [Technical University of Dortmund](https://www.tu-dortmund.de/en/)"
+      place: Germany
+      body: Taught Students in Practical Course for the Introduction to Programming Module.
+
+- title: Internships & Placements
+  entries:
+    - title: BlackHoleWeather Collaboration
+      start: October 2026
+      end: February 2027
+      org: "[University of Rome Tor Vergata](https://web.uniroma2.it/en), [University of Modena and Reggio Emilia](https://www.unimore.it/en)"
+      place: Italy
+      body: Postprocessing Multiscale AthenaPK Simulations of Massive Galaxies and Galactic Halos on CINECA LEONARDO to Build Estimators for Persistent Inflows and Outflows.
+
+    - title: Summer Student Program
+      start: August 2026
+      end: September 2026
+      org: "[Nicolaus Copernicus Astronomical Center](https://www.camk.edu.pl/en/)"
+      place: Poland
+      body: Conducted MHD Simulations of Accretion Disks Around Stars and Black Holes Using the PLUTO Code. Implemented Fixes for Radiation Physics and Modeled Radiative Transfer. Built an Adaptive Tracer Replacement Optimized with MPI for Parallelized Scaling.
+
+- title: Professional Development
+  entries:
+    - title: International Conference of Physics Students
+      start: August 2026
+      org: "[Moroccan Association of Physics](https://icps-2026.com/), [École Nationale Supérieure des Mines de Rabat](https://www.enim.ac.ma/)"
+      place: Morocco
+      body: Participated in Global Physics Forum Connecting Distinguished Researchers and Student Lecturers Across Diverse Fields of Study.
+
+    - title: Conference on Active Galactic Nuclei and Gravitational Lensing
+      start: July 2026
+      org: "[Astronomical Observatory Belgrade](http://servo.aob.rs/AGN_GL/), [University of Kragujevac](https://en.kg.ac.rs/)"
+      place: Serbia
+      body: Joined an International Astrophysics Conference on Leading Research in Active Galactic Nuclei, Spectral Line Analysis, and Gravitational Lensing Methodologies.
+
+    - title: Summer School in Satellite Dynamics and Fundamental Physics
+      start: July 2026
+      org: "[Master in Astrophysics and Space Science](https://www.master-mass.eu/), [University of Bremen](https://www.uni-bremen.de/en/)"
+      place: Germany
+      body: Completed Specialized Academic Sessions Covering Mission Predevelopment, Modeling Orbits, Gravimetry Applications, and Space Industry Practices.
+
+    - title: Winter School on Modern Methodologies in Space Science
+      start: February 2026
+      org: "[Master in Astrophysics and Space Science](https://www.master-mass.eu/), [University of Rome Tor Vergata](https://web.uniroma2.it/en)"
+      place: Italy
+      body: Engaged in Academic School Workshops Exploring Advanced Data Science Applications, Machine Learning Pipelines and Bayesian Inference for Contemporary Space Sciences.
+
+    - title: German Italian Physics Exchange
+      start: September 2025
+      org: "[Italian Association of Physics Students](https://ai-sf.it/gipe/), [University of Trieste](https://portale.units.it/en)"
+      place: Italy
+      body: Visited Bilateral Scientific Exchange Conference Exploring Advanced Research Facilities and Cutting Edge Theoretical Physics Methodologies.
+
+    - title: Lights of Tuscany
+      start: May 2025
+      org: "[Italian Association of Physics Students](https://ai-sf.it/lot/), [University of Pisa](https://www.unipi.it/en/) & [University of Florence](https://www.unifi.it/en)"
+      place: Italy
+      body: Attended International Physics Conference Seminar Series Focusing on Quantum Optics, Photonics and Contemporary Research Methodologies.
+
+    - title: International Conference of Physics Students
+      start: August 2024
+      org: "[Georgian Association of Physics Students](https://gaps.org.ge/icps), [Free University of Tbilisi](https://freeuni.edu.ge/en/)"
+      place: Georgia
+      body: Participated in Global Physics Forum Connecting Distinguished Researchers and Student Lecturers Across Diverse Fields of Study.
+
+- title: Awards & Honors
+  entries:
+    - title: Erasmus Mundus Joint Master Scholarship
+      start: October 2025
+      end: September 2027
+      org: "[European Education and Culture Executive Agency](https://www.eacea.ec.europa.eu/scholarships_en)"
+      place: Multiple Countries
+      body: Awarded a Highly Competitive Merit Based Full Scholarship Funded by the European Union for the [Master in Astrophysics and Space Science](https://www.master-mass.eu/) Selected From Global Pool of Applicants.
+
+    - title: Scholarship Nomination
+      start: June 2021
+      org: "[Märkische Schule Wattenscheid](https://www.mgwat.de/)"
+      place: Germany
+      body: Nominated by High School Leadership for the Prestigious [German Academic Scholarship Foundation](https://www.studienstiftung.de/en) as a Distinction for Graduates Showing Academic Excellence Nationwide.
+
+    - title: High School Graduation Honors
+      start: June 2021
+      org: "[Märkische Schule Wattenscheid](https://www.mgwat.de/)"
+      place: Germany
+      body: |
+        - Recognition by the Minister President as a Top Performing Graduate in the State.
+        - [German Physical Society](https://www.dpg-physik.de/?set_language=en) Award for Outstanding Achievements in Physics.
+        - [German Mathematical Society](https://www.mathematik.de/en) Award for Outstanding Achievements in Mathematics.
+
+- title: Skills & Experience
+  groups:
+    - label: Programming
+      items:
+        - Python
+        - C
+        - C++
+        - Java
+        - SQL
+        - HTML
+        - CSS
+        - Unix Shell Script
+        - MATLAB
+        - LaTeX
+
+    - label: Libraries
+      items:
+        - numpy
+        - scipy
+        - pandas
+        - matplotlib
+        - sklearn
+        - astropy
+        - astroquery
+
+    - label: Languages
+      items:
+        - Native German
+        - Fluent English
+        - Basic Turkish
+        - Elementary French & Spanish
+
+    - label: Engagement
+      body: |
+        - Ongoing Membership in Scientific Networks and Student Organizations:
+          - [Young German Physical Society](https://www.dpg-physik.de/vereinigungen/fachuebergreifend/ak/akjdpg?set_language=en)
+          - [International Association of Physics Students](https://iaps.info/)
+        - Organizing Role for [German Physical Society](https://www.dpg-physik.de/?set_language=en) High School Graduate Meeting.
+        - Completed Study Abroad Year at [Pugwash District High School](https://pdhs.ccrce.ca/) in Canada.
+        - Volunteer in [Tiny Forest](https://tiny-forest-friends.de/) Local Urban Environmental Project.
+
+- title: Relevant Background
+  groups:
+    - label: Mathematics
+      items:
+        - Real & Complex Valued Analysis
+        - Function & Distribution Theory
+        - Linear Algebra & Operators
+        - Ordinary & Partial Differential Equations
+        - Variational Calculus
+        - Multidimensional Integral & Differential Calculus
+        - Spectral Analysis
+        - Fourier & Laplace Integral Transformations
+        - Hilbert Spaces
+        - Data Mining & Analysis
+        - Machine Learning Applications
+        - Statistical & Numerical Methods
+        - Differential Forms
+        - Group Theory
+
+    - label: Physics
+      items:
+        - Analytical Mechanics & Chaotic Systems
+        - Classical Electrodynamics
+        - Optics
+        - Quantum Mechanics
+        - Quantum Field Theory
+        - Renormalization
+        - Nuclear & Elementary Particle Physics
+        - Thermodynamics & Statistics
+        - Solid State Physics
+        - Special & General Relativity
+        - Fluid Dynamics Simulations
+        - Introductory & Advanced Laboratory
+
+    - label: Astrophysics
+      items:
+        - Astroparticle Physics
+        - Radiative Processes
+        - Stellar Astrophysics
+        - Active Galactic Nuclei
+        - Interstellar Matter
+        - Computational Astrobiology
+        - Astrophysical Plasma Spectroscopy & Dynamics
+        - Cosmology
+        - Cosmic Rays

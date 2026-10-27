@@ -13,6 +13,9 @@
         <main class='wrapper'>
             <h2>Résumé</h2>
 			<a href="{{ '/resume.pdf' | relative_url }}">PDF</a>
+            {%- for section in site.data.cv %}
+            {% include cv/section.html section=section %}
+            {%- endfor %}
         </main>
     </body>
 </html>
