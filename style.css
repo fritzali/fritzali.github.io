@@ -247,7 +247,10 @@ body {
 }
 
 .cv .list li:not(:last-child)::after {
-    content: "\a0∘ ";    /* keep separator at line end */
+    content: "\a0◦ ";      /* keep separator at line end */
+    font-size: 1.3em;        /* enlarge and lift separator */
+    line-height: 0;          /* keep line spacing */
+    word-spacing: -0.13em;   /* keep original width */
 }
 
 .cv.contact {
