@@ -1,5 +1,5 @@
 @font-face {
-    font-family: "Inter Normal";
+    font-family: "Inter";
     src: url("source/font/Inter-Variable-Normal.woff2") format("woff2-variations");
     font-stretch: 100% 100%;
     font-style: normal;
@@ -8,29 +8,27 @@
 }
 
 @font-face {
-    font-family: "Inter Italic";
+    font-family: "Inter";
     src: url("source/font/Inter-Variable-Italic.woff2") format("woff2-variations");
     font-stretch: 100% 100%;
-    font-style: normal;
+    font-style: italic;
     font-weight: 100 900;
     font-optical-sizing: auto;
 }
 
 
 
-* {
-    font-family: "Inter Normal", sans-serif;
+body {
+    font-family: "Inter", sans-serif;
     font-weight: 300;
 }
 
-b {
-    font-family: "Inter Normal", sans-serif;
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 300;
+}
+
+b, strong {
     font-weight: 600;
-}
-
-i {
-    font-family: "Inter Italic", sans-serif;
-    font-weight: 300;
 }
 
 
@@ -52,7 +50,7 @@ body {
 
 
 .wrapper {
-    padding-top: 60pt;    /* vertical content offset */
+    padding-top: calc(var(--nav) + 20pt);    /* vertical content offset */
     width: var(--w);
     margin: 0 auto;       /* horizontal centering */
 }
@@ -142,10 +140,53 @@ body {
     height: 1pt;
     background: var(--hl);    /* use highlight color for scolling indicator */
     z-index: 1001;
+}
 
-    /* link animation to document scroll */
-    animation-name: grow;
-    animation-timing-function: linear;
-    animation-fill-mode: forwards;
-    animation-timeline: scroll();
+@supports (animation-timeline: scroll()) {
+    .scrollbar {
+
+        /* link animation to document scroll */
+        animation-name: grow;
+        animation-timing-function: linear;
+        animation-fill-mode: forwards;
+        animation-timeline: scroll();
+    }
+}
+
+
+
+@media (max-width: 680px) {
+    body {
+        --w: calc(100% - 24pt);
+    }
+
+    body:has(.navigation .home) {
+        --nav: 64pt;
+    }
+
+    .navigation .container {
+        flex-wrap: wrap;
+        row-gap: 6pt;
+        justify-content: space-between;
+    }
+
+    .navigation .container a {
+        padding: 0;
+    }
+
+    .navigation .container a:nth-of-type(2) {
+        margin-left: 0;
+    }
+
+    .navigation .container .home {
+        flex-basis: 100%;
+    }
+
+    .navigation .container .home h3 {
+        margin: 0;
+    }
+
+    .navigation .container a:empty {
+        display: none;
+    }
 }

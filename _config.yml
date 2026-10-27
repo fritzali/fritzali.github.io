@@ -1,0 +1,12 @@
+exclude:
+  - CLAUDE.md
+  - Makefile
+  - README.md
+  - source/icon/README.md
+  - source/resume/Makefile
+  - source/resume/resume.tex
+  - source/resume/build/*.aux
+  - source/resume/build/*.fdb_latexmk
+  - source/resume/build/*.fls
+  - source/resume/build/*.log
+  - source/resume/build/*.out
