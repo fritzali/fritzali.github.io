@@ -13,9 +13,11 @@
         <main class='wrapper'>
             <h2>Résumé</h2>
 			<a href="{{ '/resume.pdf' | relative_url }}">PDF</a>
-            {%- for section in site.data.cv %}
+            {% include cv/contact.html %}
+            {%- for section in site.data.cv.sections %}
             {% include cv/section.html section=section %}
             {%- endfor %}
+            <p class='cv updated'>Last Updated: {{ site.data.cv.updated }}</p>
         </main>
     </body>
 </html>

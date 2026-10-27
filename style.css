@@ -42,6 +42,7 @@ body {
     --fg: hsl(210 15% 94%);   /* foreground color */
     --hl: hsl(210 59% 62%);   /* highlight color */
     --ac: hsl(210 59% 30%);   /* accent color */
+    --mu: hsl(210 14% 55%);   /* muted color */
     --w: 70%;                 /* relative content width */
     --nav: 40pt;              /* navigation bar height */
     background-color: var(--bg);
@@ -159,6 +160,10 @@ body {
 }
 
 
+.cv {
+    max-width: 42rem;    /* match line breaks of the PDF */
+}
+
 .cv h3 {
     color: var(--hl);
     font-weight: 600;
@@ -227,8 +232,42 @@ body {
     display: inline;
 }
 
-.cv .list li + li::before {
-    content: " ∘ ";
+.cv .list li:not(:last-child)::after {
+    content: "\a0∘ ";    /* keep separator at line end */
+}
+
+.cv.contact {
+    text-align: center;
+}
+
+.cv .name {
+    color: var(--hl);
+    font-size: 2em;
+    font-weight: 400;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin: 24pt 0 6pt;
+}
+
+.cv.contact .list {
+    font-size: 0.9em;
+    margin: 0;
+}
+
+.cv.contact .list li:not(:last-child)::after {
+    content: "\a0• ";
+}
+
+.cv.contact a {
+    white-space: nowrap;
+}
+
+.cv.updated {
+    color: var(--mu);
+    font-size: 0.8em;
+    font-style: italic;
+    text-align: right;
+    margin-top: 24pt;
 }
 
 
