@@ -127,7 +127,11 @@ body {
     padding: 10pt 5pt;
 }
 
-.navigation .container a:nth-of-type(2) {
+.navigation .container .home-short {
+    display: none;    /* phones only */
+}
+
+.navigation .container .home-short + a {
 
     /* set all elements except first one to be on right side */
     margin-left: auto;
@@ -346,34 +350,27 @@ body {
         --w: calc(100% - 24pt);
     }
 
-    body:has(.navigation .home) {
-        --nav: 64pt;
-    }
-
     .navigation .container {
-        flex-wrap: wrap;
-        row-gap: 6pt;
         justify-content: space-between;
+        column-gap: 6pt;
     }
 
     .navigation .container a {
         padding: 0;
+        font-size: min(1em, (100vw - 54pt) / 20);    /* fit one line on small phones */
     }
 
-    .navigation .container a:nth-of-type(2) {
-        margin-left: 0;
-    }
-
-    .navigation .container .home {
-        flex-basis: 100%;
-    }
-
-    .navigation .container .home h3 {
-        margin: 0;
-    }
-
+    .navigation .container .home,
     .navigation .container a:empty {
         display: none;
+    }
+
+    .navigation .container .home-short {
+        display: inline-flex;
+    }
+
+    .navigation .container .home-short + a {
+        margin-left: 0;
     }
 
     .cv header {
