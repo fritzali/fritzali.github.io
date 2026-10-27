@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang='en'>
+    <head>
+        {% include head.html %}
+        {%- for name in page.head_includes %}
+        {% include {{ name }} %}
+        {%- endfor %}
+        <title>
+            {% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}
+        </title>
+    </head>
+    <body>
+        {% include navigation.html %}
+        <main class='wrapper{% if page.main_class %} {{ page.main_class }}{% endif %}'>
+            {{ content | strip }}
+        </main>
+    </body>
+</html>

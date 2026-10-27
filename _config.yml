@@ -1,3 +1,12 @@
+title: Fritz Agildere
+
+defaults:
+  - scope:
+      path: ''
+      type: pages
+    values:
+      layout: default
+
 exclude:
   - CLAUDE.md
   - Makefile
