@@ -251,6 +251,8 @@ body {
     font-size: 1.3em;        /* enlarge and lift separator */
     line-height: 0;          /* keep line spacing */
     word-spacing: -0.13em;   /* keep original width */
+    position: relative;
+    top: 0.04em;             /* align with list bullets */
 }
 
 .cv.contact {
