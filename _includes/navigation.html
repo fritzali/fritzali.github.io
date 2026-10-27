@@ -1,8 +1,14 @@
 <nav class='navigation'>
             <div class='container'>
-                {% if page.url == '/' %}<a></a>{% else %}<a class='home' href='/' pseudo='Home'><h3><b>Fritz&nbsp;Ali</b>&nbsp;Agildere</h3></a>{% endif %}
-                <a class='home-short{% if page.url == '/' %} active{% endif %}' href='/'>Home</a>{% for item in site.data.navigation %}{% assign current_url = page.url | split: '/' %}{% assign navigation_url = item.url | split: '/' %}
-                <a{% if current_url[1] == navigation_url[1] %} class='active'{% endif %} href='{{ item.url | relative_url }}' pseudo='{{ item.title }}'>{{ item.title }}</a>{% endfor %}
+                {%- if page.url != '/' %}
+                <a class='home' href='/'><b>Fritz&nbsp;Ali</b>&nbsp;Agildere</a>
+                {%- endif %}
+                <a class='home-short' href='/'{% if page.url == '/' %} aria-current='page'{% endif %}>Home</a>
+                {%- assign current_url = page.url | split: '/' %}
+                {%- for item in site.data.navigation %}
+                {%- assign navigation_url = item.url | split: '/' %}
+                <a href='{{ item.url | relative_url }}'{% if current_url[1] == navigation_url[1] %} aria-current='page'{% endif %}>{{ item.title }}</a>
+                {%- endfor %}
             </div>
         </nav>
         <div class='scrollbar'></div>

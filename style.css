@@ -47,6 +47,10 @@ a, a:visited {
 
 
 
+html {
+    color-scheme: dark;    /* dark scrollbars and browser controls */
+}
+
 body {
     --bg: hsl(210 15% 9.5%);  /* background color */
     --fg: hsl(210 15% 94%);   /* foreground color */
@@ -74,7 +78,7 @@ body {
 
 
 .navigation {
-    background-color: hsla(from var(--bg) h s l / 0.85);    /* transparent background */
+    background-color: var(--bg);                             /* opaque fallback */
     backdrop-filter: blur(2pt);                              /* frosted glass effect */
     display: flex;                                           /* enable flexbox module */
     top: 0;
@@ -90,6 +94,12 @@ body {
     /* make child flush with screen */
     margin: 0;
     padding: 0;
+}
+
+@supports (color: hsla(from red h s l / 0.85)) {
+    .navigation {
+        background-color: hsla(from var(--bg) h s l / 0.85);    /* transparent background */
+    }
 }
 
 .navigation .container {
@@ -116,7 +126,7 @@ body {
 }
 
 .navigation .container a {
-    transition: all 250ms ease;    /* transition animation */
+    transition: color 250ms ease;    /* transition animation */
     color: var(--fg);
     font-weight: 400;
     display: inline-flex;
@@ -125,6 +135,11 @@ body {
     text-decoration: none;
     white-space: nowrap;
     padding: 10pt 5pt;
+}
+
+.navigation .container .home {
+    font-size: 1.17em;
+    font-weight: 300;
 }
 
 .navigation .container .home-short {
@@ -141,8 +156,8 @@ body {
     color: var(--hl);    /* highlight on mouse cursor hover */
 }
 
-.navigation .container a.active {
-    color: var(--hl)    /* highlight current parent directory */
+.navigation .container a[aria-current='page'] {
+    color: var(--hl);    /* highlight current parent directory */
 }
 
 @keyframes grow {
@@ -364,8 +379,7 @@ body {
         padding: 0;
     }
 
-    .navigation .container .home,
-    .navigation .container a:empty {
+    .navigation .container .home {
         display: none;
     }
 
