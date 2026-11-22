@@ -1,4 +1,4 @@
-updated: October 2026
+updated: November 2026
 
 sections:
   - title: Research Interests
@@ -25,6 +25,9 @@ sections:
             - [University of Bremen](https://www.uni-bremen.de/en/) (Germany)
             - [University of Belgrade](https://www.bg.ac.rs/home/) (Serbia)
           - Fully Funded Recipient of an [Erasmus Mundus Joint Master](https://erasmus-plus.ec.europa.eu/opportunities/individuals/students/erasmus-mundus-joint-masters) Scholarship.
+          - Planned Thesis: *Temporal Correlations in Astrophysical Turbulence*<br><small>[Centre de Recherche Astrophysique de Lyon](https://www.ens-lyon.fr/en/research/research-units/laboratories/centre-de-recherche-astrophysique-de-lyon), [École Normale Supérieure de Lyon](https://www.ens-lyon.fr/en/)</small>
+            - Implementing Forcing in the Performance Portable AMR and SPH Code SHAMROCK.
+            - Studying Effects of Forcing Correlations on Density Structure and Star Formation.
           - Current Average Grade: 29.4 / 30.0
 
       - title: Master of Science in Physics (Transferred)
@@ -43,7 +46,7 @@ sections:
         org: "[Technical University of Dortmund](https://www.tu-dortmund.de/en/)"
         place: Germany
         body: |
-          - Final Thesis: *Neutrinos via Charm Decays in Astrophysical Sources*<br><small>[Technical University of Dortmund](https://www.tu-dortmund.de/en) & [Ruhr University Bochum](https://www.ruhr-uni-bochum.de/en)</small>
+          - Final Thesis: *Neutrinos via Charm Decays in Astrophysical Sources*<br><small>[Technical University of Dortmund](https://www.tu-dortmund.de/en), [Ruhr University Bochum](https://www.ruhr-uni-bochum.de/en)</small>
             - Decays of Short Lived Charmed Hadrons Potentially Contribute Significantly to Total Neutrino Flux at Very High Energies.
             - Estimated Relative Importance in Emission from Newborn Magnetars and Accretion Disks in Galactic Cores through Semianalytical Approach.
             - Explored Future Detection Prospects and Identified Issues with Current Literature.
@@ -124,7 +127,7 @@ sections:
 
       - title: Lights of Tuscany
         start: May 2025
-        org: "[Italian Association of Physics Students](https://ai-sf.it/lot/), [University of Pisa](https://www.unipi.it/en/) & [University of Florence](https://www.unifi.it/en)"
+        org: "[Italian Association of Physics Students](https://ai-sf.it/lot/), [University of Pisa](https://www.unipi.it/en/), [University of Florence](https://www.unifi.it/en)"
         place: Italy
         body: Attended International Physics Conference Seminar Series Focusing on Quantum Optics, Photonics and Contemporary Research Methodologies.
 
